@@ -21,6 +21,8 @@
 		5E653568196180C6002F655A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E65354A196180C6002F655A /* UIKit.framework */; };
 		5E653570196180C6002F655A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E65356E196180C6002F655A /* InfoPlist.strings */; };
 		5E653572196180C6002F655A /* NSFetchedResultsController_MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E653571196180C6002F655A /* NSFetchedResultsController_MVVMTests.m */; };
+		5E65357D19618214002F655A /* ASHViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E65357C19618214002F655A /* ASHViewModel.m */; };
+		EE8446A0996647F093420B15 /* libPods-NSFetchedResultsController-MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EFF054A2CF453198479670 /* libPods-NSFetchedResultsController-MVVM.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		5E65356D196180C6002F655A /* NSFetchedResultsController-MVVMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSFetchedResultsController-MVVMTests-Info.plist"; sourceTree = "<group>"; };
 		5E65356F196180C6002F655A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E653571196180C6002F655A /* NSFetchedResultsController_MVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFetchedResultsController_MVVMTests.m; sourceTree = "<group>"; };
+		5E65357B19618214002F655A /* ASHViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHViewModel.h; sourceTree = "<group>"; };
+		5E65357C19618214002F655A /* ASHViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHViewModel.m; sourceTree = "<group>"; };
+		7F7A54780DF740DBBE32108D /* Pods-NSFetchedResultsController-MVVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSFetchedResultsController-MVVM.xcconfig"; path = "Pods/Pods-NSFetchedResultsController-MVVM.xcconfig"; sourceTree = "<group>"; };
+		D1EFF054A2CF453198479670 /* libPods-NSFetchedResultsController-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSFetchedResultsController-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				5E653549196180C6002F655A /* CoreGraphics.framework in Frameworks */,
 				5E65354B196180C6002F655A /* UIKit.framework in Frameworks */,
 				5E653547196180C6002F655A /* Foundation.framework in Frameworks */,
+				EE8446A0996647F093420B15 /* libPods-NSFetchedResultsController-MVVM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,7 @@
 				5E65356B196180C6002F655A /* NSFetchedResultsController-MVVMTests */,
 				5E653545196180C6002F655A /* Frameworks */,
 				5E653544196180C6002F655A /* Products */,
+				7F7A54780DF740DBBE32108D /* Pods-NSFetchedResultsController-MVVM.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +113,7 @@
 				5E653548196180C6002F655A /* CoreGraphics.framework */,
 				5E65354A196180C6002F655A /* UIKit.framework */,
 				5E653565196180C6002F655A /* XCTest.framework */,
+				D1EFF054A2CF453198479670 /* libPods-NSFetchedResultsController-MVVM.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +126,8 @@
 				5E653558196180C6002F655A /* Main.storyboard */,
 				5E65355B196180C6002F655A /* ASHViewController.h */,
 				5E65355C196180C6002F655A /* ASHViewController.m */,
+				5E65357B19618214002F655A /* ASHViewModel.h */,
+				5E65357C19618214002F655A /* ASHViewModel.m */,
 				5E65355E196180C6002F655A /* Images.xcassets */,
 				5E65354D196180C6002F655A /* Supporting Files */,
 			);
@@ -159,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E653575196180C6002F655A /* Build configuration list for PBXNativeTarget "NSFetchedResultsController-MVVM" */;
 			buildPhases = (
+				7D3F5828708044C08EF25024 /* Check Pods Manifest.lock */,
 				5E65353F196180C6002F655A /* Sources */,
 				5E653540196180C6002F655A /* Frameworks */,
 				5E653541196180C6002F655A /* Resources */,
+				A5697D54B9E54A379C679511 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,12 +258,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D3F5828708044C08EF25024 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5697D54B9E54A379C679511 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-NSFetchedResultsController-MVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E65353F196180C6002F655A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5E653553196180C6002F655A /* main.m in Sources */,
+				5E65357D19618214002F655A /* ASHViewModel.m in Sources */,
 				5E653557196180C6002F655A /* ASHAppDelegate.m in Sources */,
 				5E65355D196180C6002F655A /* ASHViewController.m in Sources */,
 			);
@@ -374,6 +421,7 @@
 		};
 		5E653576196180C6002F655A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7A54780DF740DBBE32108D /* Pods-NSFetchedResultsController-MVVM.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +435,7 @@
 		};
 		5E653577196180C6002F655A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7A54780DF740DBBE32108D /* Pods-NSFetchedResultsController-MVVM.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +506,7 @@
 				5E653577196180C6002F655A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E653578196180C6002F655A /* Build configuration list for PBXNativeTarget "NSFetchedResultsController-MVVMTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +515,7 @@
 				5E65357A196180C6002F655A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

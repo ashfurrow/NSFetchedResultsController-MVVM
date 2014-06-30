@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASHViewController : UIViewController
+@interface ASHViewController : UITableViewController
 
 @end
