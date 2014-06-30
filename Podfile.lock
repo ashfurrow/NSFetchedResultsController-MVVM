@@ -1,0 +1,25 @@
+PODS:
+  - libextobjc/EXTScope (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - ReactiveViewModel (0.2):
+    - ReactiveCocoa (~> 2.1)
+
+DEPENDENCIES:
+  - libextobjc/EXTScope (= 0.4)
+  - ReactiveCocoa (= 2.3.1)
+  - ReactiveViewModel (= 0.2)
+
+SPEC CHECKSUMS:
+  libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  ReactiveViewModel: 78387196df2e7535bb2776c41df15dbb17300f8a
+
+COCOAPODS: 0.33.1

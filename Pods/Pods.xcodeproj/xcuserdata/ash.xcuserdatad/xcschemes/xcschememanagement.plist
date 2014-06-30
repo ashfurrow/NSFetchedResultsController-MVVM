@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-NSFetchedResultsController-MVVM-ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NSFetchedResultsController-MVVM-ReactiveViewModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NSFetchedResultsController-MVVM-libextobjc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NSFetchedResultsController-MVVM.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>49918791C78F4551969FB196</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD2197DD300E44D595660760</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0065F873CA24A888A7F6668</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B37B2131F9174FF8AE0242B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
